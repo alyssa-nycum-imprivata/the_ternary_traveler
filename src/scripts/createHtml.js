@@ -7,6 +7,7 @@ const createHtml = {
         <p>Description: ${interest.description}</p>
         <p>Cost: $${interest.cost}</p>
         <p>Review: ${interest.review}</p>
+        <button id="delete--${interest.id}" class="button delete_buttons">Delete</button>
         </div>
         `;
     },

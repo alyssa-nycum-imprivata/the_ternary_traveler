@@ -1,3 +1,7 @@
 .interest_output {
     border-bottom: 2px solid black;
 }
+
+.delete_buttons {
+    margin-bottom: 15px;
+}

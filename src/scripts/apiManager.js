@@ -22,6 +22,11 @@ const apiManager = {
            body: JSON.stringify(newInterest) 
         })
             .then(resp => resp.json())
+    },
+    deleteInterest(id) {
+        return fetch(baseUrl + interestsExtension + "/" + `${id}` + expandPlace, {
+            method: "DELETE"
+        })
     }
 }
 

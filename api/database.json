@@ -24,14 +24,6 @@
       "cost": "50",
       "review": "It's tall",
       "id": 1
-    },
-    {
-      "placeId": "2",
-      "name": "fdsa",
-      "description": "fdsa",
-      "cost": "fdsa",
-      "review": "fdsa",
-      "id": 2
     }
   ]
 }
