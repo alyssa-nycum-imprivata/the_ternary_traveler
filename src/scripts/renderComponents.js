@@ -14,6 +14,7 @@ const renderComponents = {
                     interestsLog.innerHTML += createHtml.interestsFactory(interest)
                 })
                 events.addDeleteButtonsEventListener();
+                events.addEditButtonsEventListeners();
             })
     },
     renderCountries() {
