@@ -8,4 +8,4 @@ apiManager.getCountries().then(renderComponents.renderCountries)
 
 renderComponents.renderInterests();
 
-events.addSaveButtonEventListenter();
+events.addSaveButtonEventListener();

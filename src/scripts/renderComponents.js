@@ -1,5 +1,6 @@
 import apiManager from './apiManager.js';
 import createHtml from './createHtml.js';
+import events from './events.js';
 
 const renderComponents = {
     renderInterests() {
@@ -11,7 +12,8 @@ const renderComponents = {
 
                 interests.forEach(interest => {
                     interestsLog.innerHTML += createHtml.interestsFactory(interest)
-                });
+                })
+                events.addDeleteButtonsEventListener();
             })
     },
     renderCountries() {
