@@ -9,6 +9,11 @@ const createHtml = {
         <p>Review: ${interest.review}</p>
         </div>
         `;
+    },
+    countryDropdown(country) {
+        return `
+        <option value=${country.id}>${country.name}</option>
+        `;
     }
 }
 

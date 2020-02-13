@@ -9,6 +9,10 @@ const apiManager = {
         return fetch(baseUrl + interestsExtension + expandPlace)
             .then(resp => resp.json())
     },
+    getCountries() {
+        return fetch(baseUrl + placesExtension)
+            .then(resp => resp.json())
+    },
     addNewInterest(newInterest) {
         return fetch(baseUrl + interestsExtension + expandPlace, {
            method: "POST",

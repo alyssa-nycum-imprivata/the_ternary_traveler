@@ -13,6 +13,16 @@ const renderComponents = {
                     interestsLog.innerHTML += createHtml.interestsFactory(interest)
                 });
             })
+    },
+    renderCountries() {
+        const countryDropdown = document.querySelector("#place_input");
+
+        apiManager.getCountries()
+            .then(countries => {
+                countries.forEach(country => {
+                    countryDropdown.innerHTML += createHtml.countryDropdown(country)
+                })
+            })
     }
 }
 

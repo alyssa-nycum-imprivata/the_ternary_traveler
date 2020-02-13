@@ -4,6 +4,8 @@ import events from './events.js';
 
 apiManager.getAllInterests();
 
+apiManager.getCountries().then(renderComponents.renderCountries)
+
 renderComponents.renderInterests();
 
 events.addSaveButtonEventListenter();
