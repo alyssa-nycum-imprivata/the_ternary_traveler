@@ -23,6 +23,20 @@ const apiManager = {
         })
             .then(resp => resp.json())
     },
+    editInterest(interest) {
+        return fetch(baseUrl + interestsExtension + "/" + `${interest.id}` + expandPlace, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(interest)
+        })
+            .then(resp => resp.json())
+    },
+    updateInterestFields(id) {
+        return fetch(baseUrl + interestsExtension + "/" + `${id}` + expandPlace)
+            .then(resp => resp.json())
+    },
     deleteInterest(id) {
         return fetch(baseUrl + interestsExtension + "/" + `${id}` + expandPlace, {
             method: "DELETE"
