@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Ternary Traveler</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">The Ternary Traveler</h1>
+        <h3 id="tagline">Where in the world would you like to go?</h3>
+    </header>
+
+    <section id="form_container">
+
+        <fieldset id="place_container" class="input_container">
+            <label for="place_input" class="label">Country:</label>
+            <select class="input" id="place_input">
+                <option value="" disabled selected>Select</option>
+            </select>
+        </fieldset>
+
+        <fieldset id="name_container" class="input_container">
+            <label for="name_input" class="label">Name:</label>
+            <input type="text" id="name_input" class="input">
+        </fieldset>
+
+        <fieldset id="description_container" class="input_container">
+            <label for="description_input" class="label">Description:</label>
+            <input type="text" id="description_input" class="input">
+        </fieldset>
+
+        <fieldset id="cost_container" class="input_container">
+            <label for="cost_input" class="label">Cost:</label>
+            <input type="text" id="cost_input" class="input">
+        </fieldset>
+
+        <fieldset id="review_container" class="input_container">
+            <label for="review_input" class="label">Review:</label>
+            <input type="text" id="review_input" class="input">
+        </fieldset>
+
+    </section>
+
+    <section id="interests_log">
+        <h2>Places To Go:</h2>
+    </section>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
